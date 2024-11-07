@@ -3,7 +3,7 @@ Task 1: Implement a multi-column form layout using Bootstrap's grid system
 
 Task 2: Create an inline form layout for a contact form
 
-Task 3: implement a stacked form layout with labels above input fields-->
+Task 3: Implement a stacked form layout with labels above input fields-->
 
 
 <!DOCTYPE html>
@@ -18,26 +18,26 @@ Task 3: implement a stacked form layout with labels above input fields-->
     <body>
         <form class="form-group">
             <h1>Contact Form</h1>
-            <div class="row"> <!--Task 1 and 3-->
-                <div class="col">
-                    <label for="firstname">First Name</label>
+            <div class="row m-1"> <!--Task 1 and 3-->
+                <div class="col form-floating p-1">
                     <input type="text" class="form-control" name="firstname" id="firstname" placeholder="First name">
+                    <label for="firstname">First Name</label>
                 </div>
-                <div class="col">
-                    <label for="lastname">Last Name</label>
+                <div class="col form-floating p-1">
                     <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Last name">
+                    <label for="lastname">Last Name</label>
                 </div>
             </div>
-            <div class="row mb-3"> <!--Task 2-->
-                <div class="col">
-                    <label for="email" class="form-label">Email Address</label>
+            <div class="row m-1"> <!--Task 2-->
+                <div class="col form-floating p-1">
                     <input type="email" class="form-control" name="email" id="email" placeholder="Email Address">
+                    <label for="email" class="form-label">Email Address</label>
                 </div>
-                <div class="col">
-                    <label for="message" class="form-label">Message</label>
+                <div class="col form-floating p-1">
                     <textarea name="message" id="message" class="form-control" placeholder="Enter your message here"></textarea>
+                    <label for="message" class="form-label">Message</label>
                 </div>
-                <div class="col">
+                <div class="col pt-3">
                     <button type="reset">Reset</button>
                     <button type="submit">Submit</button>
                 </div>
